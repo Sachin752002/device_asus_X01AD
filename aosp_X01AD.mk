@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common EvolutionOS stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Pixel experience OS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -34,7 +34,7 @@ ICONS_VARIANT := teamfilesicons
 AOSP_ENHANCER := true
 
 # Device identifiers.
-PRODUCT_NAME := evolution_X01AD
+PRODUCT_NAME := aosp_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
@@ -47,6 +47,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=X01A_1
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="msm8953_64-user 10 WW_Phone-202005071625 17.2018.2004.31-20200507 release-keys"
+    PRIVATE_BUILD_DESC="sargo-user 12 SP2A.220505.008 8782922 release-keys"
 
-BUILD_FINGERPRINT := "asus/WW_X01AD/ASUS_X01A_1:10/WW_Phone-202005071625/17.2018.2004.31-20200507:user/release-keys"
+BUILD_FINGERPRINT := "google/sargo/sargo:12/SP2A.220505.008/8782922:user/release-keys"
