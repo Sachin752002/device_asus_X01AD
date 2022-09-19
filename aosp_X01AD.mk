@@ -32,6 +32,9 @@ $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 PIXEL_LAUNCHER_VARIANT := tawaret
 ICONS_VARIANT := teamfilesicons
 AOSP_ENHANCER := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifiers.
 PRODUCT_NAME := aosp_X01AD
