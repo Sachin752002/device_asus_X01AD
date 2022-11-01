@@ -224,6 +224,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Doze
 
+# USB Debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
