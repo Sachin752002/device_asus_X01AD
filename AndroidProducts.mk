@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_X01AD.mk
+    $(LOCAL_DIR)/lineage_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_X01AD-user \
