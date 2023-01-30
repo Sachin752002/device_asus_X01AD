@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_X01AD.mk
+    $(LOCAL_DIR)/xdroid_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_X01AD-user \
-    voltage_X01AD-userdebug \
-    voltage_X01AD-eng
+    xdroid_X01AD-user \
+    xdroid_X01AD-userdebug \
+    xdroid_X01AD-eng
