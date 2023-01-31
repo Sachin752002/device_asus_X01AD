@@ -24,6 +24,7 @@ $(call inherit-product, device/asus/X01AD/device.mk)
 # Inherit some common xdroid OS stuff.
 $(call inherit-product, vendor/xdroid/config/common.mk)
 XDROID_MAINTAINER := Hirokixd
+XDROID_BOOT := 720
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
@@ -32,7 +33,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifiers.
